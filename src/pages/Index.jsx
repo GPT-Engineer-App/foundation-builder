@@ -16,7 +16,7 @@ const Index = () => {
   };
 
   const handleSubmit = () => {
-    const trackingUrl = `https://t.17track.net/zh-cn#nums=${inputValue}`;
+    const trackingUrl = `https://t.17track.net/en#nums=${inputValue}`;
     window.location.href = trackingUrl;
   };
 
