@@ -16,8 +16,8 @@ const Index = () => {
   };
 
   const handleSubmit = () => {
-    console.log("Input Value:", inputValue);
-    // Add your confirmation action here
+    const trackingUrl = `https://t.17track.net/zh-cn#nums=${inputValue}`;
+    window.location.href = trackingUrl;
   };
 
   return (
@@ -31,7 +31,7 @@ const Index = () => {
         value={inputValue}
         onChange={handleInputChange}
         onKeyPress={handleKeyPress}
-        placeholder="Enter something..."
+        placeholder="Enter tracking number..."
         className="w-1/2"
       />
       <Button variant="primary" size="lg" onClick={handleSubmit}>
